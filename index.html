@@ -1,1 +1,95 @@
-<h1 id="title">Tell me about your pets</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding-left: 20%;
+        padding-right: 20%;
+      }
+      label {
+        font-size: 18px;
+        display: block;
+        padding-bottom: 10px;
+      }
+      input, textarea, select {
+        display: block;
+        width: 100%;
+        padding-bottom: 20px;
+      }
+
+      form {
+        background-color: gray;
+        padding: 40px 40px 40px 40px;
+      }
+
+      #button-area {
+        float: left;
+        width: 50%;
+        height: 50%;
+      }
+
+      input[type=checkbox]:not(old) + label,
+      input[type=radio   ]:not(old) + label {
+        display      : inline-block;
+        margin-left  : -28px;
+        padding-left : 28px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1 id="title">Tell me about your favorite movie</h1>
+    <p id="description">
+      This is a survey where you can tell us about your favorite movie.
+    </p>
+    <form id="survey-form">
+      <label id="name-label">Name:</label>
+      <input type="text" name="name" id="name" required placeholder="First Name"><br>
+      <label id="email-label">Email:</label>
+      <input type="email" name="email" id="email" required placeholder="Email address"><br>
+      <label id="number-label">Number:</label>
+      <input type="number" name="number" id="number" min="0" max="10" required placeholder="$"><br>
+
+      <label id="streaming-sites">Your favorite streaming sites:</label>
+      <select id="dropdown" name="sites">
+        <option value="netflix">Netflix</option>
+        <option value="prime">Amazon Prime</option>
+        <option value="youtube">Youtube</option>
+        <option value="hulu">Hulu</option>
+        <option value="hotstar">Disney Hotstar</option>
+        <option value="hbomax">HBO Max</option>
+        <option value="other">Other</option>
+      </select>
+      <div id="button-area">
+        <label id="gender-label">Gender:</label>
+        <input type="radio" name="gender" value="male"> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+      </div>
+      <div id="button-area">
+        <label id="transportation-type-label">Your favorite movie genre:</label>
+      <input type="checkbox" id="genre1" name="genre1" value="Bike">Action<br>
+      <input type="checkbox" id="genre2" name="genre2" value="Car">Adventure<br>
+      <input type="checkbox" id="genre3" name="genre3" value="Boat">Animation<br>
+      <input type="checkbox" id="genre4" name="genre4" value="Bike">Biography<br>
+      <input type="checkbox" id="genre5" name="genre5" value="Bike">Comedy<br>
+      <input type="checkbox" id="genre6" name="genre6" value="Bike">Documentary<br>
+      <input type="checkbox" id="genre7" name="genre7" value="Bike">Mystery<br>
+      <input type="checkbox" id="genre8" name="genre8" value="Bike">Thriller<br>
+      <input type="checkbox" id="genre9" name="genre9" value="Bike">Horror<br>
+      <input type="checkbox" id="genre10" name="genre10" value="Bike">Sports<br>
+      <input type="checkbox" id="genre11" name="genre11" value="Bike">War<br>
+      <input type="checkbox" id="genre12" name="genre12" value="Bike">Fantasy<br>
+      <input type="checkbox" id="genre13" name="genre13" value="Bike">Science fiction<br>
+      <input type="checkbox" id="genre14" name="genre14" value="Bike">Teen<br>
+      <input type="checkbox" id="genre15" name="genre15" value="Bike">Romance<br>
+      <input type="checkbox" id="genre16" name="genre16" value="Bike">Drama<br>
+    </div>
+
+      <textarea placeholder="Tell us about your favorite movies"></textarea><br>
+      <input type="submit" id="submit">
+    </form>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
